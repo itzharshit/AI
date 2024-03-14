@@ -41,8 +41,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat = update.effective_chat
     msg = update.effective_message
     keyb = []
-    keyb.append([InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕", url=f"http://t.me/{context.bot.username}?startgroup=true")])
-    await msg.reply_text(f"ʜᴇʏᴀ\nɪ'ᴍ {context.bot.first_name}\nɪ ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ᴀᴄᴛɪᴠᴇ ʏᴏᴜʀ ᴄʜᴀᴛ", reply_markup=InlineKeyboardMarkup(keyb))
+    keyb.append([InlineKeyboardButton(text="Add me to your group ➕", url=f"http://t.me/{context.bot.username}?startgroup=true")])
+    await msg.reply_text(f"Hi there, {context.bot.first_name}\nI am Natasha, your virtual friend, I am made by Harshit Shrivastav.", reply_markup=InlineKeyboardMarkup(keyb))
 
 
 async def log_user(update: Update, context: ContextTypes.DEFAULT_TYPE):
